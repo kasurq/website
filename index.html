@@ -20,7 +20,7 @@
         }
         main {
             width: 90%;
-            max-width: 1200px;
+            max-width: 600px;
         }
         p {
             font-size: 0.9rem;
@@ -39,24 +39,6 @@
             font-size: 0.8rem;
             color: #999;
         }
-        .video-container {
-            display: flex;
-            justify-content: center;
-            gap: 1rem; 
-            flex-wrap: wrap; 
-        }
-        .video {
-            flex: 1 1 calc(50% - 1rem); 
-            position: relative;
-            padding-top: 56.25%; 
-        }
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
     </style>
 </head>
 <body>
@@ -67,22 +49,22 @@
             <a href="mailto:katriina.surquin@gmail.com">katriina.surquin@gmail.com</a>.
         </p>
         
-       <div class="video-container">
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/Ldet_G8cCbw" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
-                    title="Katriina Surquin Cinematography Reel">
-                </iframe>
-            </div>
-
-            <div class="video">
-                <iframe src="https://player.vimeo.com/video/467710259" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    title="Second Video">
-                </iframe>
-            </div>
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://www.youtube.com/embed/Ldet_G8cCbw" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                title="Katriina Surquin Cinematography Reel">
+            </iframe>
+        </div>
+        
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://vimeo.com/467710259" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                title="Matthew Pye - No Common Sense">
+            </iframe>
         </div>
         
     </main>
